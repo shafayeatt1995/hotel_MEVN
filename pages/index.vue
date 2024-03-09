@@ -1,7 +1,14 @@
 <template>
-  <div>
-    <h1 class="bg-orange-500">ami anik</h1>
-    <Tutorial />
+  <div class="dark:bg-slate-900">
+    <HomeNavbar />
+    <HomeHeader />
+    <HomeSearch />
+    <HomeDestination />
+    <HomePackage />
+    <HomeStory />
+    <HomeReview />
+    <HomeBlog />
+    <HomeFooter />
   </div>
 </template>
 

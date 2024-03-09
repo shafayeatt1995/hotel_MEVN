@@ -12,7 +12,10 @@ export default {
 
   css: [],
 
-  plugins: [],
+  plugins: [
+    { src: '~/plugins/meta.js', mode: 'client' },
+    { src: '~/plugins/carousel.js', mode: 'client' },
+  ],
 
   components: true,
 
@@ -30,7 +33,9 @@ export default {
     },
   },
 
-  build: {},
+  build: {
+    analyze: process.env.NODE_ENV === 'production' && process.env.ANALYZE_BUILD,
+  },
 
   serverMiddleware: [{ path: '/api', handler: '~/backend' }],
 }

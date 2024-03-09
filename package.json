@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "node server --trace-warnings",
     "build": "NODE_ENV=production && nuxt build",
+    "ana": "NODE_ENV=production && ANALYZE_BUILD=true nuxt build",
     "start": "cross-env NODE_ENV=production node server",
     "dev2": "nuxt",
     "build2": "nuxt build",
@@ -35,6 +36,7 @@
     "socket.io": "^2.3.0",
     "socket.io-client": "^2.3.0",
     "vue": "^2.7.10",
+    "vue-owl-carousel": "^2.0.3",
     "vue-server-renderer": "^2.7.10",
     "vue-template-compiler": "^2.7.10"
   },
@@ -47,7 +49,8 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-vue": "^9.5.1",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "webpack-bundle-analyzer": "^4.10.1"
   },
   "_moduleAliases": {
     "@": "./"
