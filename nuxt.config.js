@@ -14,7 +14,7 @@ export default {
 
   plugins: [
     { src: '~/plugins/meta.js', mode: 'client' },
-    { src: '~/plugins/carousel.js', mode: 'client' },
+    // { src: '~/plugins/carousel.js', mode: 'client' },
   ],
 
   components: true,

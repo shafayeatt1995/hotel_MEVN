@@ -71,11 +71,11 @@
         </div>
 
         <div class="absolute bottom-0 start-1/3 -z-1">
-          <img
+          <!-- <img
             src="/images/map-plane-big.png"
             class="lg:w-[600px] w-96"
             alt=""
-          />
+          /> -->
         </div>
       </div>
     </div>

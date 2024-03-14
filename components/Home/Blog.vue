@@ -14,16 +14,16 @@
         </p>
       </div>
 
-      <div class="grid lg:grid-cols-3 lg:grid-cols-2 grid-cols-1 mt-6 gap-6">
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
         <div class="group relative overflow-hidden">
           <div
             class="relative overflow-hidden rounded-md shadow dark:shadow-gray-800"
           >
-            <img
+            <!-- <img
               src="assets/images/blog/1.jpg"
               class="group-hover:scale-110 group-hover:rotate-3 duration-500"
               alt=""
-            />
+            /> -->
             <div
               class="absolute top-0 start-0 p-4 opacity-0 group-hover:opacity-100 duration-500"
             >
@@ -78,11 +78,11 @@
           <div
             class="relative overflow-hidden rounded-md shadow dark:shadow-gray-800"
           >
-            <img
+            <!-- <img
               src="assets/images/blog/2.jpg"
               class="group-hover:scale-110 group-hover:rotate-3 duration-500"
               alt=""
-            />
+            /> -->
             <div
               class="absolute top-0 start-0 p-4 opacity-0 group-hover:opacity-100 duration-500"
             >
@@ -138,11 +138,11 @@
           <div
             class="relative overflow-hidden rounded-md shadow dark:shadow-gray-800"
           >
-            <img
+            <!-- <img
               src="assets/images/blog/3.jpg"
               class="group-hover:scale-110 group-hover:rotate-3 duration-500"
               alt=""
-            />
+            /> -->
             <div
               class="absolute top-0 start-0 p-4 opacity-0 group-hover:opacity-100 duration-500"
             >

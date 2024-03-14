@@ -9,7 +9,7 @@
             <div class="grid lg:grid-cols-12 grid-cols-1 gap-6">
               <div class="lg:col-span-3 lg:col-span-12">
                 <a href="#" class="text-[22px] focus:outline-none">
-                  <img src="assets/images/logo-light.png" alt="" />
+                  <!-- <img src="assets/images/logo-light.png" alt="" /> -->
                 </a>
                 <p class="mt-6 text-gray-300">
                   Planning for a trip? We will organize your trip with the best
@@ -266,10 +266,7 @@
         <div class="grid grid-cols-1">
           <div class="text-center">
             <p class="mb-0">
-              ©
-              <script>
-                document.write(new Date().getFullYear())
-              </script>
+              ©{{ new Date().getFullYear() }}
               Travosy. Design with
               <i class="mdi mdi-heart text-red-600"></i> by
               <a

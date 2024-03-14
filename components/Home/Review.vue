@@ -14,7 +14,7 @@
         </p>
       </div>
       <!-- :autoplay="true" -->
-      <carousel
+      <!-- <carousel
         :stage-padding="50"
         :nav="false"
         :dots="false"
@@ -214,7 +214,7 @@
             </div>
           </div>
         </div>
-      </carousel>
+      </carousel> -->
     </div>
   </section>
 </template>

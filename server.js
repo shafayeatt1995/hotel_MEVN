@@ -21,6 +21,8 @@ async function start() {
 
   const server = createSocketServer(app)
   server.listen(port)
+  // eslint-disable-next-line no-console
+  console.log('Server run on `http://localhost:' + port + '`')
 }
 
 start()

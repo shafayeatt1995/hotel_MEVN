@@ -13,7 +13,7 @@
           and within best budget!
         </p>
       </div>
-      <carousel
+      <!-- <carousel
         :autoplay="true"
         :stage-padding="50"
         :nav="false"
@@ -47,7 +47,7 @@
             </p>
           </div>
         </div>
-      </carousel>
+      </carousel> -->
     </div>
   </section>
 </template>

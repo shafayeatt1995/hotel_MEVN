@@ -79,6 +79,7 @@
             Login
           </nuxt-link>
         </div>
+        <DarkMode class="ml-3" />
       </div>
     </div>
   </nav>
