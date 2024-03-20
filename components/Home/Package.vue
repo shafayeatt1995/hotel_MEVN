@@ -34,7 +34,7 @@
             <div class="absolute top-0 end-0 p-4">
               <a
                 href="javascript:void(0)"
-                class="size-8 inline-flex justify-center items-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 rounded-full text-slate-100 dark:text-slate-700 focus:text-blue-500 dark:focus:text-blue-500 hover:text-blue-500 dark:hover:text-blue-500"
+                class="size-8 inline-flex justify-center items-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 rounded-full text-slate-300 dark:text-slate-700 focus:text-blue-500 dark:focus:text-blue-500 hover:text-red-500 dark:hover:text-blue-500"
                 ><i class="fas fa-heart text-[20px] align-middle"></i
               ></a>
             </div>

@@ -19,6 +19,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/pwa": "^3.3.5",
+    "bkash-payment": "^3.0.2",
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
     "cookie-session": "^2.1.0",

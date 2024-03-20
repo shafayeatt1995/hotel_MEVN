@@ -10,7 +10,7 @@
         <div class="lg:col-span-8 lg:order-1 order-2">
           <h5 class="text-3xl font-dancing text-white">Beauty of Discover</h5>
           <h4
-            class="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-6xl mb-6 mt-5"
+            class="font-semibold text-white lg:leading-normal leading-normal text-4xl lg:text-6xl mb-6 mt-5"
           >
             Let's Leave The Road, <br />
             And Take The Travosy

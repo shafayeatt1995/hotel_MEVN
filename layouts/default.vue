@@ -38,7 +38,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'poppins', sans-serif;
 }
 .fade-enter-active,
 .fade-leave-active {

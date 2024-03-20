@@ -11,12 +11,12 @@
       />
       <div class="block h-8 rounded-full bg-gray-3 dark:bg-dark-2 w-14"></div>
       <div
-        class="absolute flex items-center justify-center w-6 h-6 transition bg-white rounded-full dot dark:bg-dark-5 left-1 top-1 peer-checked:translate-x-full peer-checked:bg-primary border"
+        class="absolute flex items-center justify-center size-6 transition bg-blue-600 text-white rounded-full left-1 top-1 peer-checked:translate-x-full peer-checked:bg-primary border"
       >
-        <span v-if="darkMode" class="text-gray-700">
+        <span v-if="darkMode" class="mt-[2px]">
           <i class="fa-regular fa-moon"></i>
         </span>
-        <span v-else class="text-gray-700">
+        <span v-else class="mt-[2px]">
           <i class="fa-regular fa-sun"></i>
         </span>
         <!-- <span class="hidden active">

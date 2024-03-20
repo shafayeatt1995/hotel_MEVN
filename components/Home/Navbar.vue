@@ -1,5 +1,5 @@
 <template>
-  <nav class="sticky top-0 bg-white shadow-md z-10">
+  <nav class="sticky top-0 bg-white dark:bg-slate-900 shadow-md z-10">
     <div
       class="container px-4 py-2 mx-auto lg:flex lg:justify-between lg:items-center"
     >
@@ -32,48 +32,16 @@
       >
         <div class="flex flex-col lg:flex-row lg:mx-6">
           <nuxt-link
-            :to="{ name: 'index', hash: '#home' }"
-            class="my-2 text-gray-700 transition-colors duration-300 transform hover:text-green-600 lg:mx-4 lg:my-0"
+            :to="{ name: 'index' }"
+            class="my-2 text-gray-700 dark:text-white transition-colors duration-300 transform hover:text-blue-600 lg:mx-4 lg:my-0"
           >
             Home
           </nuxt-link>
-
-          <nuxt-link
-            :to="{ name: 'index', hash: '#process' }"
-            class="my-2 text-gray-700 transition-colors duration-300 transform hover:text-green-600 lg:mx-4 lg:my-0"
-          >
-            How to
-          </nuxt-link>
-          <nuxt-link
-            :to="{ name: 'index', hash: '#feature' }"
-            class="my-2 text-gray-700 transition-colors duration-300 transform hover:text-green-600 lg:mx-4 lg:my-0"
-            >Feature</nuxt-link
-          >
-          <nuxt-link
-            :to="{ name: 'index', hash: '#faq' }"
-            class="my-2 text-gray-700 transition-colors duration-300 transform hover:text-green-600 lg:mx-4 lg:my-0"
-            >FAQ</nuxt-link
-          >
-          <nuxt-link
-            :to="{ name: 'index', hash: '#customer' }"
-            class="my-2 text-gray-700 transition-colors duration-300 transform hover:text-green-600 lg:mx-4 lg:my-0"
-            >Customer</nuxt-link
-          >
-          <nuxt-link
-            :to="{ name: 'index', hash: '#pricing' }"
-            class="my-2 text-gray-700 transition-colors duration-300 transform hover:text-green-600 lg:mx-4 lg:my-0"
-            >Pricing</nuxt-link
-          >
-          <nuxt-link
-            :to="{ name: 'index', hash: '#contact' }"
-            class="my-2 text-gray-700 transition-colors duration-300 transform hover:text-green-600 lg:mx-4 lg:my-0"
-            >Contact</nuxt-link
-          >
         </div>
 
         <div class="flex justify-center lg:block">
           <nuxt-link
-            class="px-7 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-gray-900 rounded-lg lg:w-auto hover:bg-gray-800 focus:outline-none focus:bg-gray-800 font-bold"
+            class="px-7 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-700 focus:outline-none focus:bg-blue-700 font-bold"
             :to="{ name: 'login' }"
           >
             Login

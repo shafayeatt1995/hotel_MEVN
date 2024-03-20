@@ -2836,6 +2836,14 @@ bindings@^1.5.0:
   dependencies:
     file-uri-to-path "1.0.0"
 
+bkash-payment@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.npmjs.org/bkash-payment/-/bkash-payment-3.0.2.tgz#7b94cf7dd20c5132f39318e2efc39ba961e4c500"
+  integrity sha512-JZBk/TuHJNnQY2wUW73LiuPXB0JlHoUbPsZiP2Fs1JSAybEi/liSK6iOPlNa2cXJQtSicBEgePFXo9yp07bSyg==
+  dependencies:
+    node-fetch "^2.6.1"
+    uuid "^9.0.0"
+
 blob@0.0.5:
   version "0.0.5"
   resolved "https://registry.npmjs.org/blob/-/blob-0.0.5.tgz#d680eeef25f8cd91ad533f5b01eed48e64caf683"
@@ -10708,6 +10716,11 @@ utils-merge@1.0.1, utils-merge@1.x.x, utils-merge@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==
+
+uuid@^9.0.0:
+  version "9.0.1"
+  resolved "https://registry.npmjs.org/uuid/-/uuid-9.0.1.tgz#e188d4c8853cc722220392c424cd637f32293f30"
+  integrity sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==
 
 validate-npm-package-license@^3.0.1:
   version "3.0.4"

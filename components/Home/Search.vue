@@ -90,7 +90,7 @@
               <input
                 type="submit"
                 name="search"
-                class="py-1 px-5 h-10 inline-block tracking-wide align-middle duration-500 text-base text-center bg-blue-500 text-white rounded-md w-full cursor-pointer"
+                class="py-1 px-5 h-10 inline-block tracking-wide align-middle duration-500 text-base text-center bg-blue-600 text-white rounded-md w-full cursor-pointer"
                 value="Search"
               />
             </div>
