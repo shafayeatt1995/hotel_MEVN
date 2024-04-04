@@ -1,6 +1,6 @@
 <template>
-  <section class="relative lg:py-24 py-16 overflow-hidden">
-    <div class="container relative lg:mt-24 mt-16 mx-auto">
+  <section class="relative py-16 overflow-hidden">
+    <div class="container relative mt-16 mx-auto">
       <div class="grid grid-cols-1 pb-6 text-center">
         <h3
           class="mb-6 lg:text-3xl text-2xl lg:leading-normal leading-normal font-semibold"
@@ -13,8 +13,8 @@
           you can replace it with any text.
         </p>
       </div>
-      <!-- :autoplay="true" -->
-      <!-- <carousel
+      <carousel
+        :autoplay="true"
         :stage-padding="50"
         :nav="false"
         :dots="false"
@@ -30,9 +30,9 @@
             <div
               class="content relative rounded shadow dark:shadow-gray-700 m-2 p-6 bg-white dark:bg-slate-900 before:content-[''] before:absolute before:start-1/2 before:-bottom-[4px] before:box-border before:border-8 before:rotate-[45deg] before:border-t-transparent before:border-e-white dark:before:border-e-slate-900 before:border-b-white dark:before:border-b-slate-900 before:border-s-transparent before:shadow-testi dark:before:shadow-gray-700 before:origin-top-left"
             >
-              <i
+              <!-- <i
                 class="fas fa-quote-right mdi mdi-format-quote-open mdi-48px text-blue-500"
-              ></i>
+              ></i> -->
               <p class="text-slate-400">
                 " It seems that only fragments of the original text remain in
                 the Lorem Ipsum texts used today. "
@@ -214,7 +214,7 @@
             </div>
           </div>
         </div>
-      </carousel> -->
+      </carousel>
     </div>
   </section>
 </template>

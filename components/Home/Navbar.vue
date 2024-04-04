@@ -38,6 +38,14 @@
             Home
           </nuxt-link>
         </div>
+        <div class="flex flex-col lg:flex-row lg:mx-6">
+          <button
+            class="my-2 text-gray-700 dark:text-white transition-colors duration-300 transform hover:text-blue-600 lg:mx-4 lg:my-0"
+            @click="bkashPayment"
+          >
+            Bkash payment
+          </button>
+        </div>
 
         <div class="flex justify-center lg:block">
           <nuxt-link
@@ -60,6 +68,9 @@ export default {
     return {
       isOpen: false,
     }
+  },
+  methods: {
+    async bkashPayment() {},
   },
 }
 </script>

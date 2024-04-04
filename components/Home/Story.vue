@@ -1,6 +1,6 @@
 <template>
-  <section class="relative lg:py-24 py-16 overflow-hidden">
-    <div class="container relative lg:mt-24 mt-16 mx-auto">
+  <section class="relative py-16 overflow-hidden">
+    <div class="container relative mt-16 mx-auto">
       <div class="grid lg:grid-cols-12 grid-cols-1 items-center gap-6 relative">
         <div class="lg:col-span-5">
           <div class="relative">

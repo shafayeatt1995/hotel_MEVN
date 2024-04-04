@@ -1,5 +1,5 @@
 <template>
-  <section class="relative lg:py-24 py-16 overflow-hidden">
+  <section class="relative py-16 overflow-hidden">
     <div class="container relative mx-auto">
       <div class="grid grid-cols-1 pb-8 text-center">
         <h3
@@ -13,7 +13,7 @@
           and within best budget!
         </p>
       </div>
-      <!-- <carousel
+      <carousel
         :autoplay="true"
         :stage-padding="50"
         :nav="false"
@@ -47,7 +47,7 @@
             </p>
           </div>
         </div>
-      </carousel> -->
+      </carousel>
     </div>
   </section>
 </template>

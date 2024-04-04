@@ -1,6 +1,6 @@
 <template>
-  <section class="relative lg:py-24 py-16 overflow-hidden">
-    <div class="container relative lg:mt-24 mt-16">
+  <section class="relative py-16 overflow-hidden py">
+    <div class="container relative mt-16 mx-auto">
       <div class="grid grid-cols-1 pb-6 text-center">
         <h3
           class="mb-6 lg:text-3xl text-2xl lg:leading-normal leading-normal font-semibold"
@@ -19,11 +19,11 @@
           <div
             class="relative overflow-hidden rounded-md shadow dark:shadow-gray-800"
           >
-            <!-- <img
-              src="assets/images/blog/1.jpg"
+            <img
+              src="/images/blog/1.jpg"
               class="group-hover:scale-110 group-hover:rotate-3 duration-500"
               alt=""
-            /> -->
+            />
             <div
               class="absolute top-0 start-0 p-4 opacity-0 group-hover:opacity-100 duration-500"
             >
@@ -78,11 +78,11 @@
           <div
             class="relative overflow-hidden rounded-md shadow dark:shadow-gray-800"
           >
-            <!-- <img
-              src="assets/images/blog/2.jpg"
+            <img
+              src="/images/blog/2.jpg"
               class="group-hover:scale-110 group-hover:rotate-3 duration-500"
               alt=""
-            /> -->
+            />
             <div
               class="absolute top-0 start-0 p-4 opacity-0 group-hover:opacity-100 duration-500"
             >
@@ -138,11 +138,11 @@
           <div
             class="relative overflow-hidden rounded-md shadow dark:shadow-gray-800"
           >
-            <!-- <img
-              src="assets/images/blog/3.jpg"
+            <img
+              src="/images/blog/3.jpg"
               class="group-hover:scale-110 group-hover:rotate-3 duration-500"
               alt=""
-            /> -->
+            />
             <div
               class="absolute top-0 start-0 p-4 opacity-0 group-hover:opacity-100 duration-500"
             >

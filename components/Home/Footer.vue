@@ -2,12 +2,12 @@
   <footer
     class="footer bg-dark-footer relative text-gray-200 dark:text-gray-200"
   >
-    <div class="container relative">
+    <div class="container relative mx-auto">
       <div class="grid grid-cols-12">
         <div class="col-span-12">
           <div class="py-[60px] px-0">
-            <div class="grid lg:grid-cols-12 grid-cols-1 gap-6">
-              <div class="lg:col-span-3 lg:col-span-12">
+            <div class="grid lg:grid-cols-4 grid-cols-1 gap-6">
+              <div class="">
                 <a href="#" class="text-[22px] focus:outline-none">
                   <!-- <img src="assets/images/logo-light.png" alt="" /> -->
                 </a>
@@ -104,7 +104,7 @@
               </div>
               <!--end col-->
 
-              <div class="lg:col-span-3 lg:col-span-4">
+              <div class="">
                 <div class="lg:ms-8">
                   <h5 class="tracking-[1px] text-gray-100 font-semibold">
                     Office
@@ -158,7 +158,7 @@
               </div>
               <!--end col-->
 
-              <div class="lg:col-span-3 lg:col-span-4">
+              <div class="">
                 <div class="lg:ms-8">
                   <h5 class="tracking-[1px] text-gray-100 font-semibold">
                     Company
@@ -211,7 +211,7 @@
               </div>
               <!--end col-->
 
-              <div class="lg:col-span-3 lg:col-span-4">
+              <div class="">
                 <h5 class="tracking-[1px] text-gray-100 font-semibold">
                   Newsletter
                 </h5>
