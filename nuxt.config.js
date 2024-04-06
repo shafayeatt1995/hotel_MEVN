@@ -25,8 +25,9 @@ export default {
   css: [],
 
   plugins: [
-    { src: '~/plugins/meta.js', mode: 'client' },
-    { src: '~/plugins/carousel.js', mode: 'client' },
+    '@/plugins/slide.js',
+    { src: '@/plugins/meta.js', mode: 'client' },
+    { src: '@/plugins/carousel.js', mode: 'client' },
   ],
 
   components: true,
@@ -49,5 +50,5 @@ export default {
     analyze: process.env.NODE_ENV === 'production' && process.env.ANALYZE_BUILD,
   },
 
-  serverMiddleware: [{ path: '/api', handler: '~/backend' }],
+  serverMiddleware: [{ path: '/api', handler: '@/backend' }],
 }

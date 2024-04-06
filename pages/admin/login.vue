@@ -11,41 +11,34 @@
     <div class="container mx-auto relative z-10">
       <div class="flex justify-center">
         <div
-          class="max-w-[400px] w-full m-auto p-6 bg-white dark:bg-slate-900 shadow-md dark:shadow-gray-700 rounded-md"
+          class="max-w-96 w-full m-auto p-6 bg-white dark:bg-slate-900 shadow-md dark:shadow-gray-700 rounded-md"
         >
-          <nuxt-link :to="{ name: 'index' }"
-            ><img src="/images/logo.svg" class="mx-auto max-h-20" alt=""
-          /></nuxt-link>
-          <h5 class="my-6 text-xl font-semibold">Login</h5>
+          <div class="flex justify-center">
+            <nuxt-link
+              :to="{ name: 'index' }"
+              class="mx-auto max-h-20 inline-flex"
+            >
+              <img
+                src="/images/logo.svg"
+                class="object-contain max-h-20 px-5"
+                alt=""
+              />
+            </nuxt-link>
+          </div>
+          <h1 class="mt-6 text-2xl font-semibold">Login</h1>
           <form class="text-start" @submit.prevent="login">
             <div class="grid grid-cols-1">
-              <div class="mb-4">
-                <label class="font-semibold" for="LoginEmail"
-                  >Email Address:</label
-                >
-                <input
-                  v-model="form.email"
-                  type="text"
-                  class="mt-3 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0"
-                  placeholder="Type your ID"
-                />
-              </div>
-
-              <div class="mb-4">
-                <label class="font-semibold" for="LoginPassword"
-                  >Password:</label
-                >
-                <input
-                  v-model="form.password"
-                  type="password"
-                  class="mt-3 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0"
-                  placeholder="Password:"
-                />
-              </div>
-
-              <div class="flex justify-between mb-4">
+              <Input
+                v-for="(field, i) in loginInputFields"
+                :key="i"
+                v-model="form"
+                :field="field"
+                :errors="errors"
+              />
+              <div class="flex justify-between mt-4">
                 <div class="flex items-center mb-0">
                   <input
+                    id="RememberMe"
                     class="form-checkbox rounded border-gray-100 dark:border-gray-800 text-blue-500 focus:border-blue-300 focus:ring focus:ring-offset-0 focus:ring-blue-500/20 focus:ring-opacity-50 me-2"
                     type="checkbox"
                     value=""
@@ -56,19 +49,10 @@
                     >Remember me</label
                   >
                 </div>
-                <p class="text-slate-400 mb-0">
-                  <a href="forgot-password.html" class="text-slate-400"
-                    >Forgot password ?</a
-                  >
-                </p>
               </div>
 
-              <div class="mb-4">
-                <input
-                  type="submit"
-                  class="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-blue-500 text-white rounded-md w-full"
-                  value="Login / Sign in"
-                />
+              <div class="my-4">
+                <Button type="submit" class="w-full">Login / Sign in</Button>
               </div>
             </div>
           </form>
@@ -87,10 +71,29 @@ export default {
         email: '',
         password: '',
       },
+      errors: {},
     }
   },
   head() {
     return { title: `Admin login - ${process.env.APP_NAME}` }
+  },
+  computed: {
+    loginInputFields() {
+      return [
+        {
+          type: 'text',
+          placeholder: 'Type your ID',
+          name: 'email',
+          label: `Email / Phone / ID`,
+        },
+        {
+          type: 'password',
+          placeholder: 'Type your password',
+          name: 'password',
+          label: 'Password',
+        },
+      ]
+    },
   },
   methods: {
     login() {},

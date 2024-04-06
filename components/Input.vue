@@ -1,8 +1,8 @@
 <template>
   <slide-up-down :active="!field.hide" :duration="300">
     <div class="mt-3">
-      <label v-if="field.label" class="text-gray-700" :for="field.label?.id">{{
-        field.label?.title
+      <label v-if="field.label" class="text-gray-700" :for="uid">{{
+        field.label
       }}</label>
       <div class="relative flex items-center">
         <span v-if="field.icon" class="absolute">
@@ -22,9 +22,9 @@
         </span>
         <select
           v-if="field.type === 'select'"
-          :id="field.label?.id"
+          :id="uid"
           v-model="data[field.name]"
-          class="block w-full py-2 text-gray-700 bg-white border rounded-lg focus:border-green-400 focus:ring-green-300 focus:outline-none focus:ring focus:ring-opacity-40"
+          class="block w-full py-2 text-gray-700 bg-white border rounded-lg focus:border-blue-400 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
           :class="field.icon ? 'px-11' : ' px-4'"
         >
           <option v-if="field.showEmptySelect ?? true" value="">
@@ -45,12 +45,12 @@
         </template>
         <textarea
           v-else-if="field.type === 'textarea'"
-          :id="field.label?.id"
+          :id="uid"
           v-model="data[field.name]"
           :cols="field.textarea?.cols ?? 30"
           :rows="field.textarea?.rows ?? 10"
           :name="field.name"
-          class="block w-full py-2 text-gray-700 bg-white border rounded-lg focus:border-green-400 focus:ring-green-300 focus:outline-none focus:ring focus:ring-opacity-40"
+          class="block w-full py-2 text-gray-700 bg-white border rounded-lg focus:border-blue-400 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
           :class="[
             field.inlineSubmit?.show
               ? 'pl-4 pr-14'
@@ -62,18 +62,18 @@
         />
         <input
           v-else-if="field.type === 'color'"
-          :id="field.label?.id"
+          :id="uid"
           v-model="data[field.name]"
           :type="field.type"
-          class="block w-full bg-white border rounded-lg focus:border-green-400 focus:ring-green-300 focus:outline-none focus:ring focus:ring-opacity-40"
+          class="block w-full bg-white border rounded-lg focus:border-blue-400 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
           :name="field.name"
         />
         <input
           v-else
-          :id="field.label?.id"
+          :id="uid"
           v-model="data[field.name]"
           :type="field.type"
-          class="block w-full py-2 text-gray-700 bg-white border rounded-lg focus:border-green-400 focus:ring-green-300 focus:outline-none focus:ring focus:ring-opacity-40"
+          class="block w-full py-2 text-gray-700 bg-white border rounded-lg focus:border-blue-400 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
           :class="[
             field.inlineSubmit?.show
               ? 'pl-4 pr-14'
@@ -96,6 +96,7 @@
     </div>
   </slide-up-down>
 </template>
+
 <script>
 export default {
   name: 'VueInput',
@@ -104,6 +105,11 @@ export default {
     errors: { type: Object, default: null },
     options: { type: Array, default: () => [] },
     textarea: { type: Object, default: null },
+  },
+  data() {
+    return {
+      uid: [...Array(10)].map(() => Math.random().toString(36)[2]).join(''),
+    }
   },
   computed: {
     data: {
