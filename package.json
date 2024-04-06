@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "node server --trace-warnings",
+    "dev": "node server.js --trace-warnings",
     "build": "NODE_ENV=production && nuxt build",
     "ana": "NODE_ENV=production && ANALYZE_BUILD=true nuxt build",
-    "start": "cross-env NODE_ENV=production node server",
+    "start": "NODE_ENV=production node --watch server.js",
     "dev2": "nuxt",
     "build2": "nuxt build",
     "start2": "nuxt start",

@@ -38,7 +38,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
 }
 .fade-enter-active,
 .fade-leave-active {
