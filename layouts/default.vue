@@ -38,7 +38,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .fade-enter-active,
 .fade-leave-active {

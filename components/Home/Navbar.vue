@@ -30,17 +30,17 @@
         ]"
         class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white lg:bg-transparent lg: lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center shadow-xl lg:shadow-none"
       >
-        <div class="flex flex-col lg:flex-row lg:mx-6">
+        <div class="flex flex-col lg:flex-row">
           <nuxt-link
             :to="{ name: 'index' }"
-            class="my-2 text-gray-700 dark:text-white transition-colors duration-300 transform hover:text-blue-600 lg:mx-4 lg:my-0"
+            class="my-2 text-gray-700 dark:text-white transition-colors duration-300 transform hover:text-blue-600 lg:my-0"
           >
             Home
           </nuxt-link>
         </div>
         <div class="flex flex-col lg:flex-row lg:mx-6">
           <button
-            class="my-2 text-gray-700 dark:text-white transition-colors duration-300 transform hover:text-blue-600 lg:mx-4 lg:my-0"
+            class="my-2 text-gray-700 dark:text-white transition-colors duration-300 transform hover:text-blue-600 lg:my-0"
             @click="bkashPayment"
           >
             Bkash payment
@@ -50,7 +50,7 @@
         <div class="flex justify-center lg:block">
           <nuxt-link
             class="px-7 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-700 focus:outline-none focus:bg-blue-700 font-bold"
-            :to="{ name: 'login' }"
+            :to="{ name: 'admin-login' }"
           >
             Login
           </nuxt-link>
